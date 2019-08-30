@@ -9,7 +9,7 @@ cin>>n>>m;
 int a[n];
 map<int,int>res;
 int max1=0;
-int val=0;
+int v=0;
 for(int i=0;i<n;i++)
 {
 cin>>a[i];
@@ -26,16 +26,16 @@ max1=res[a[i]];
 
 else
 {
-if(max1==res[a[i]] and a[i]>val)
+if(max1==res[a[i]] and a[i]>v)
 {
 val=arr[i];
 }
 else if(res[a[i]]>max1)
 {
-val=arr[i];
+v=arr[i];
 max1=res[a[i]];
 }
-cout<<val<<" "<<max1<<endl;
+cout<<v<<" "<<max1<<endl;
 }
 }
 }
